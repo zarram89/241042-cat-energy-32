@@ -2,7 +2,8 @@
 
 * Студент: [Рамиль Зарипов](https://up.htmlacademy.ru/adaptive/32/user/241042).
 * Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
-* Сайт: [Мой проект - Кэт энерджи](https://zarram89.github.io/241042-cat-energy-32/).
+* Сайт: [Мой проект Кэт энерджи](https://zarram89.github.io/241042-cat-energy-32/).
+
 
 ---
 
