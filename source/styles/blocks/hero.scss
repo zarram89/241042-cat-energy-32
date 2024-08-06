@@ -1,0 +1,17 @@
+.hero {
+  font-family: $secondary-font-family;
+  color: $basic-light-color;
+}
+
+.hero__header {
+  min-height: 302px;
+  background-color: $primary-special-color;
+  background-image: url("../../images/hero-bg-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero__title {
+
+}

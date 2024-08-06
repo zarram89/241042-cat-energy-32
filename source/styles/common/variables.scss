@@ -1,6 +1,20 @@
 /* здесь используйте глобальные переменные */
-// Viewports
 
+//Colors
+$basic-dark-color: #000000;
+$primary-dark-color: #444444;
+
+$basic-light-color: #ffffff;
+$primary-light-color: #f2f2f2;
+
+$basic-special-color: #68b738;
+$primary-special-color: rgba(104, 183, 56, 0.85);
+
+// Fonts
+$primary-font-family: "Lato", sans-serif;
+$secondary-font-family: "Oswald", sans-serif;
+
+// Viewports
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
