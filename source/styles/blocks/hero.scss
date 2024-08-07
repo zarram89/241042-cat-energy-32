@@ -5,6 +5,7 @@
 
 .hero__header {
   min-height: 302px;
+
   background-color: $primary-special-color;
   background-image: url("../../images/hero-bg-mobile@1x.jpg");
   background-size: cover;
@@ -13,5 +14,14 @@
 }
 
 .hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+}
 
+.hero__lead {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
 }

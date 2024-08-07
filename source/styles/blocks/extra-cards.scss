@@ -1,0 +1,39 @@
+.extra-cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.extra-cards__title {
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $tertiary-dark-color;
+  text-transform: uppercase;
+}
+
+.extra-cards__list {
+  line-height: 14px;
+}
+
+.extra-cards__description {
+  text-align: right;
+}
+
+.extra-products__promo {
+  min-height: 290px;
+
+  background-color: $primary-special-color;
+  background-image: url("../../images/extra-products-bg-desktop@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.extra-products__promo-slogan {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-light-color;
+}

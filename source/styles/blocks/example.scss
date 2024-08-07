@@ -1,0 +1,30 @@
+.example {
+  background-color: $secondary-light-color;
+}
+
+.example__termin {
+  font-family: $secondary-font-family;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $basic-dark-color;
+  text-align: center;
+}
+
+.example__description {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.example__item--price .example__termin,
+.example__item--price .example__description {
+  font-family: $secondary-font-family;
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-dark-color;
+  text-align: center;
+  text-transform: uppercase;
+}

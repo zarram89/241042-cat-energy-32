@@ -1,0 +1,11 @@
+.subscription-form__input {
+  font-family: $secondary-font-family;
+  font-size: 20px;
+  line-height: 30px;
+  color: $primary-dark-color;
+  text-transform: uppercase;
+}
+
+.subscription-form__input::placeholder {
+  color: $primary-dark-color;
+}

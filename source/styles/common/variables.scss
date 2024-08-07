@@ -3,12 +3,20 @@
 //Colors
 $basic-dark-color: #000000;
 $primary-dark-color: #444444;
+$secondary-dark-color: #111111;
+$tertiary-dark-color: #222222;
+
 
 $basic-light-color: #ffffff;
+$basic-light-color-opacity: rgba(255, 255, 255, 0.3);
 $primary-light-color: #f2f2f2;
+$secondary-light-color: #eaeaea;
+$tertiary-light-color: #c4c4c4;
+$quaternary-light-color: #ebebeb;
 
 $basic-special-color: #68b738;
 $primary-special-color: rgba(104, 183, 56, 0.85);
+$secondary-special-color: #5eaa2f;
 
 // Fonts
 $primary-font-family: "Lato", sans-serif;
