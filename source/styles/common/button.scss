@@ -1,0 +1,66 @@
+.button {
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover {
+    background-color: $secondary-special-color;
+  }
+
+  &:focus {
+    background-color: $secondary-special-color;
+  }
+
+  &:active {
+    color: $basic-light-color-opacity;
+    background-color: $secondary-special-color;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &.disabled:hover,
+  &:disabled:active,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &--primary {
+    color: $basic-light-color;
+    background-color: $basic-special-color;
+  }
+
+  &--secondary {
+    color: $primary-dark-color;
+    background-color: $primary-light-color;
+
+    &:hover {
+      color: $primary-dark-color;
+      background-color: $quaternary-light-color;
+    }
+
+    &:focus {
+      color: $primary-dark-color;
+      background-color: $quaternary-light-color;
+    }
+
+    &:active {
+      background-color: $quaternary-light-color;
+    }
+
+    &:disabled,
+    &.disabled,
+    &:disabled:hover,
+    &.disabled:hover,
+    &:disabled:active,
+    &.disabled:active {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+}
