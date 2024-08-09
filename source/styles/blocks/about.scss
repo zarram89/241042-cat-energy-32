@@ -3,3 +3,59 @@
   padding: 0;
   list-style: none;
 }
+
+.about__item {
+  background-color: $primary-light-color;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    height: 60px;
+    width: 60px;
+
+    background-color: $basic-special-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    height: 60px;
+    width: 60px;
+
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(1) {
+    &::after {
+      background-image: url("../../icons/stack.svg#icon-about-good");
+      background-size: 30px 32px;
+    }
+  }
+
+  &:nth-child(2) {
+    &::after {
+      background-image: url("../../icons/stack.svg#icon-about-cook");
+      background-size: 26px 28px;
+    }
+  }
+
+  &:nth-child(3) {
+    &::after {
+      background-image: url("../../icons/stack.svg#icon-about-time");
+      background-size: 25px 30px;
+    }
+  }
+
+  &:nth-child(4) {
+    &::after {
+      background-image: url("../../icons/stack.svg#icon-about-result");
+      background-size: 26px 31px;
+    }
+  }
+}

@@ -2,9 +2,44 @@
   background-color: $primary-light-color;
 }
 
+.main-footer__logo-link:hover .logo__text svg,
+.main-footer__logo-link:focus-visible .logo__text svg {
+  fill: #000000;
+}
+
 .main-footer__academy-link {
   font-size: 16px;
   line-height: 20px;
   color: $primary-dark-color;
   text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: $basic-special-color;
+  }
+
+  &:active {
+    color: $basic-special-color;
+    opacity: 0.3;
+  }
+}
+
+.academy-link {
+  display: block;
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../icons/stack.svg#icon-footer-html-academy");
+  background-color: $quaternary-dark-color;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $basic-special-color;
+  }
+
+  &:active {
+    background-color: $basic-special-color;
+    opacity: 0.3;
+  }
 }

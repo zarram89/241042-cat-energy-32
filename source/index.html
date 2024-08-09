@@ -16,8 +16,17 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image main-header__logo-image--text" src="images/placeholder.jpg" width="101" height="18" alt="Логотип Cat Energy">
+      <a class="main-header__logo logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-text-light.svg" width="118" height="21" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-text-light.svg" width="101" height="18" type="image/svg+xml">
+          <img class="logo__text" src="images/logo-text-light.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
       </a>
       <nav class="main-header__main-nav main-nav">
         <button class="main-nav__toggle" type="button">
@@ -64,11 +73,12 @@
       <div class="diet__wrapper">
         <ul class="diet__list">
           <li class="diet__item">
+
             <h3 class="diet__title">Похудение</h3>
             <p class="diet__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="diet__link" href="#">Каталог Slim</a>
           </li>
-          <li class="diet__item">
+          <li class="diet__item circle-image">
             <h3 class="diet__title">Набор массы</h3>
             <p class="diet__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="diet__link" href="#">Каталог Pro</a>
@@ -161,7 +171,9 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo-link" href="index.html">
-        <img class="main-footer__logo-link" width="128" height="24" src="images/placeholder.jpg" alt="Логотип Cat Energy">
+        <picture>
+          <img class="logo__text" src="images/logo-text-dark.svg" width="128" height="24" alt="Cat Energy">
+        </picture>
       </a>
       <ul class="main-footer__social-list social-list">
         <li class="social-list__item">
@@ -180,7 +192,9 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+        <span class="academy-link"></span>
+      </a>
     </div>
   </footer>
 </body>

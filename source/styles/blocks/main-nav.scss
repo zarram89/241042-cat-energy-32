@@ -15,3 +15,13 @@
 
   background-color: $basic-light-color;
 }
+
+.main-nav__toggle {
+  width: 18px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#icon-button-close");
+  background-color: $basic-dark-color;
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
