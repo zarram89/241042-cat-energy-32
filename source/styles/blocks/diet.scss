@@ -59,10 +59,28 @@
 }
 
 .diet__link {
+  position: relative;
   font-family: $secondary-font-family;
   font-size: 16px;
   line-height: 16px;
   color: $basic-dark-color;
   text-transform: uppercase;
   text-decoration: none;
+  transition: background-image 1s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -35px;
+    margin-top: -4.5px;
+    width: 32px;
+    height: 10px;
+    background-image: url("../../icons/stack.svg#icon-arrow-short");
+    background-color: transparent;
+  }
+
+  &:hover::after {
+    background-image: url("../../icons/stack.svg#icon-arrow-long");
+  }
 }
