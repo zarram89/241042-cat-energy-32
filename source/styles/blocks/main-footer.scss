@@ -7,4 +7,27 @@
   line-height: 20px;
   color: $primary-dark-color;
   text-decoration: none;
+
+  &:hover .main-footer__logo,
+  &:focus-visible .main-footer__logo {
+    background-color: $basic-special-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__logo {
+  display: block;
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../icons/stack.svg#icon-footer-html-academy");
+  background-color: $quaternary-dark-color;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  &:active {
+    background-color: $basic-special-color;
+  }
 }
