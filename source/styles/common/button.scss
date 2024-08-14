@@ -63,4 +63,9 @@
       pointer-events: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

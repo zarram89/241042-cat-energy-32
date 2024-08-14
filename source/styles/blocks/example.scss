@@ -1,5 +1,28 @@
 .example {
+  outline: 5px solid rgba(255, 0, 149, 0.8);
+  outline-offset: -5px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
   background-color: $secondary-light-color;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: $basic-light-color;
+    background-image: linear-gradient($basic-light-color 55%, $secondary-light-color 55%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.example__wrapper {
+  outline: 5px solid rgba(47, 0, 255, 0.8);
+  outline-offset: -5px;
 }
 
 .example__termin {
