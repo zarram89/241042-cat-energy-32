@@ -1,43 +1,24 @@
 .main-header {
-  color: $basic-dark-color;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  background-color: $basic-light-color;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
-    color: $basic-light-color;
-
-    background-color: transparent;
-  }
-}
-
-.main-header__wrapper {
-  outline: 5px solid rgba(98, 0, 255, 0.8);
-  outline-offset: -5px;
-
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+  color: $basic-dark-color;
+  background-color: $basic-light-color;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-light-color;
+
+    background-color: transparent;
+  }
 }
 
 .main-header__logo {
-  outline: 5px solid rgba(255, 0, 200, 0.8);
-  outline-offset: -5px;
-
   display: flex;
   height: 38px;
   align-items: center;

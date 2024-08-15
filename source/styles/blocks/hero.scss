@@ -1,6 +1,4 @@
 .hero {
-  outline: 5px solid rgba(47, 0, 255, 0.8);
-  outline-offset: -5px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -15,11 +13,9 @@
 }
 
 .hero__wrapper {
-  outline: 5px solid rgba(255, 0, 149, 0.8);
-  outline-offset: -5px;
-
   @media (min-width: $tablet-width) {
     padding-left: 90px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {

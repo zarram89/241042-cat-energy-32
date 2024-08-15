@@ -14,42 +14,40 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-text-light.svg" width="118" height="21" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-text-light.svg" width="101" height="18" type="image/svg+xml">
-          <img class="logo__text" src="images/logo-text-dark.svg" width="101" height="18" alt="Cat Energy">
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__list--close">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Подбор продукции</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+  <header class="main-header wrapper">
+    <a class="main-header__logo logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-text-light.svg" width="118" height="21" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-text-light.svg" width="101" height="18" type="image/svg+xml">
+        <img class="logo__text" src="images/logo-text-dark.svg" width="101" height="18" alt="Cat Energy">
+      </picture>
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list main-nav__list--close">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" aria-current="page">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Подбор продукции</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <main class="main-container catalog">
+  <main class="main-container catalog wrapper">
     <div class="catalog__wrapper">
       <h1 class="catalog__title">Каталог продукции</h1>
       <!-- Basic-products -->
@@ -60,23 +58,31 @@
 
             <!-- Product-1 -->
             <li class="cards__item">
-              <a class="cards__link-img" href="#" aria-label="Страница товара">
-                <picture>
-                  <!-- <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/cards-photo-1-desktop@1x.png 1x, images/cards-photo-1-desktop@2x.png 2x"> -->
-                  <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/cards-photo-1-tablet@1x.png 1x, images/cards-photo-1-tablet@2x.png 2x">
-                  <img class="cards__img" width="68" height="86" src="images/cards-photo-1-mobile@1x.png" srcset="images/cards-photo-1-mobile@2x.png 2x" alt="">
-                </picture>
-              </a>
-              <div class="cards__info">
-                <h3 class="cards__title">Cat Energy PRO 500 г</h3>
-                <dl class="cards__list">
-                  <dt class="cards__termin">Масса</dt>
-                  <dd class="cards__description">500 г</dd>
-                  <dt class="cards__termin">Вкус</dt>
-                  <dd class="cards__description">Курица</dd>
-                  <dt class="cards__ternim">Цена</dt>
-                  <dd class="cards__description">700 Р</dd>
-                </dl>
+              <div class="cards__content">
+                <a class="cards__link-img" href="#" aria-label="Страница товара">
+                  <picture>
+                    <!-- <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/cards-photo-1-desktop@1x.png 1x, images/cards-photo-1-desktop@2x.png 2x"> -->
+                    <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/cards-photo-1-tablet@1x.png 1x, images/cards-photo-1-tablet@2x.png 2x">
+                    <img class="cards__img" width="68" height="86" src="images/cards-photo-1-mobile@1x.png" srcset="images/cards-photo-1-mobile@2x.png 2x" alt="">
+                  </picture>
+                </a>
+                <div class="cards__info">
+                  <h3 class="cards__title">Cat Energy PRO 500 г</h3>
+                  <dl class="cards__list">
+                    <div class="cards__list-item">
+                      <dt class="cards__termin">Масса</dt>
+                      <dd class="cards__description">500 г</dd>
+                    </div>
+                    <div class="cards__list-item">
+                      <dt class="cards__termin">Вкус</dt>
+                      <dd class="cards__description">Курица</dd>
+                    </div>
+                    <div class="cards__list-item">
+                      <dt class="cards__ternim">Цена</dt>
+                      <dd class="cards__description">700 Р</dd>
+                    </div>
+                  </dl>
+                </div>
               </div>
               <a class="cards__link button button--primary" href="#">Заказать</a>
             </li>
