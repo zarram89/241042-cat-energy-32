@@ -1,4 +1,25 @@
+.subscription {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 104px 234px;
+  }
+}
+
+.subscription__wrapper {
+  padding: 0 20px;
+}
+
 .subscription__description {
+  margin: 0;
+  margin-bottom: 24px;
+
   font-family: $secondary-font-family;
   font-size: 16px;
   line-height: 24px;
