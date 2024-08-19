@@ -1,8 +1,30 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   background-color: $primary-light-color;
+  text-align: center;
+
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
 
 .main-footer__academy-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   color: $primary-dark-color;

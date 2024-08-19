@@ -1,4 +1,26 @@
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.subscription-form__email {
+  margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 66%;
+  }
+}
+
 .subscription-form__input {
+  width: 100%;
+  padding: 13px;
+
   font-family: $secondary-font-family;
   font-size: 20px;
   line-height: 30px;
@@ -8,4 +30,10 @@
 
 .subscription-form__input::placeholder {
   color: $primary-dark-color;
+}
+
+.subscription-form__button {
+  @media (min-width: $tablet-width) {
+    width: 33%;
+  }
 }

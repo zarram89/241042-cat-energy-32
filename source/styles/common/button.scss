@@ -1,4 +1,6 @@
 .button {
+  padding: 10px;
+
   font-family: $secondary-font-family;
   font-size: 16px;
   line-height: 20px;
@@ -62,5 +64,10 @@
       opacity: 0.5;
       pointer-events: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
   }
 }

@@ -4,7 +4,35 @@
   list-style: none;
 }
 
+.extra-cards__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  border-top: 1px solid $quinary-dark-color;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.extra-cards__item:last-child {
+  border-bottom: 1px solid $quinary-dark-color;
+}
+
+.extra-cards__content {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .extra-cards__title {
+  margin: 0;
+  margin-bottom: 15px;
+
   font-family: $secondary-font-family;
   font-size: 16px;
   line-height: 16px;
@@ -14,26 +42,15 @@
 }
 
 .extra-cards__list {
-  line-height: 14px;
+  margin: 0;
+  margin-bottom: 15px;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .extra-cards__description {
+  margin: 0;
+
   text-align: right;
-}
-
-.extra-products__promo {
-  min-height: 290px;
-
-  background-color: $primary-special-color;
-  background-image: url("../../images/extra-products-bg-desktop@1x.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.extra-products__promo-slogan {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: $basic-light-color;
 }

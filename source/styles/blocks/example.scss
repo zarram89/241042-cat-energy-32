@@ -1,5 +1,46 @@
 .example {
+  padding-left: 20px;
+  padding-right: 20px;
+
   background-color: $secondary-light-color;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: $basic-light-color;
+    background-image: linear-gradient($basic-light-color 55%, $secondary-light-color 55%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__info {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.example__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .example__termin {
@@ -19,6 +60,22 @@
   text-align: center;
 }
 
+.example__item--price {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/-1;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .example__item--price .example__termin,
 .example__item--price .example__description {
   font-family: $secondary-font-family;
@@ -27,4 +84,25 @@
   color: $basic-dark-color;
   text-align: center;
   text-transform: uppercase;
+}
+
+.example__item--price .example__description {
+  justify-self: end;
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+  }
+}
+
+.example__item--price .example__termin {
+  justify-self: start;
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+  }
 }
