@@ -14,17 +14,17 @@
 </head>
 
 <body class="page__body page__body--index">
-  <header class="main-header wrapper">
+  <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59" type="image/svg+xml">
         <source media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        <img class="main-header__logo-image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
       </picture>
       <picture>
         <source media="(min-width: 1440px)" srcset="images/logo-text-light.svg" width="118" height="21" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo-text-light.svg" width="101" height="18" type="image/svg+xml">
-        <img class="logo__text" src="images/logo-text-light.svg" width="101" height="18" alt="Cat Energy">
+        <!-- <source media="(min-width: 768px)" srcset="images/logo-text-light.svg" width="101" height="18" type="image/svg+xml"> -->
+        <img class="main-header__logo-text" src="images/logo-text-light.svg" width="101" height="18" alt="Cat Energy">
       </picture>
     </a>
     <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
@@ -32,15 +32,15 @@
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list main-nav__list--close">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">Главная</a>
+        <ul class="main-nav__list main-nav__list--closed">
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" aria-current="page">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Подбор продукции</a>
+            <a class="main-nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>

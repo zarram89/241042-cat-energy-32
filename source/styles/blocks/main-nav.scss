@@ -1,3 +1,111 @@
+.main-nav {
+  position: relative;
+  width: auto;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -53px;
+  right: 13px;
+  z-index: 2;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-dark-color;
+  box-shadow: 0 8px 0 0 $basic-dark-color, 0 16px 0 0 $basic-dark-color;
+}
+
+
+.main-nav--closed .main-nav__toggle:focus-visible::before,
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: $basic-special-color;
+  box-shadow: 0 8px 0 0 $basic-special-color, 0 16px 0 0 $basic-special-color;
+}
+
+.main-nav--opened .main-nav__toggle {
+  // mask-image: url("../../icons/stack.svg#icon-button-close");
+  // background-color: $basic-dark-color;
+  // mask-position: center center;
+  // mask-repeat: no-repeat;
+  // mask-size: 18px 18px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 12px;
+    width: 25px;
+    height: 2px;
+    background-color: $basic-dark-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:focus-visible::before,
+  &:focus-visible::after,
+  &:active::before,
+  &:active::after {
+    background-color: $basic-special-color;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    min-height: 66px;
+    background-color: $basic-light-color;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+
+  // .main-nav--nojs .main-nav__item--current {
+  //   //СТИЛЬ ДЛЯ АКТИВНОЙ ССЫЛКИ
+  // }
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -5,21 +113,63 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
     align-items: center;
-    max-width: 436px;
+    max-width: 500px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 475px;
+    max-width: 700px;
   }
 }
 
 .main-nav__item {
   text-align: center;
+  border-top: 1px solid $quinary-light-color;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    margin-right: 33px;
+  }
+
+  &--current {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 4px;
+        left: 0;
+        height: 2px;
+        background-color: $basic-special-color;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        background-color: $basic-light-color;
+      }
+    }
+  }
+}
+
+.main-nav__item:last-of-type {
+  border-bottom: 1px solid $quinary-light-color;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    margin-right: 0;
+  }
 }
 
 .main-nav__link {
+  display: block;
+  padding: 22px 40px 23px;
+
   font-family: $secondary-font-family;
   font-size: 20px;
   line-height: 20px;
@@ -27,16 +177,9 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  &:hover,
-  &:focus-visible {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
+    padding: 13px 0;
+
     font-size: 18px;
     line-height: 24px;
     color: $basic-dark-color;
@@ -49,17 +192,15 @@
   }
 }
 
-
-.main-nav__toggle {
-  width: 18px;
-  height: 18px;
-  mask-image: url("../../icons/stack.svg#icon-button-close");
-  background-color: $basic-dark-color;
-  mask-position: center center;
-  mask-repeat: no-repeat;
-  mask-size: contain;
-
+.main-nav__link[href] {
   @media (min-width: $tablet-width) {
-    display: none;
+    &:hover,
+    &:focus-visible {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

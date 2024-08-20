@@ -24,23 +24,23 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="images/logo-text-light.svg" width="118" height="21" type="image/svg+xml">
         <source media="(min-width: 768px)" srcset="images/logo-text-light.svg" width="101" height="18" type="image/svg+xml">
-        <img class="logo__text" src="images/logo-text-dark.svg" width="101" height="18" alt="Cat Energy">
+        <img class="logo__text" src="images/logo-text-light.svg" width="101" height="18" alt="Cat Energy">
       </picture>
     </a>
-    <nav class="main-nav">
+    <nav class="main-header__main-nav main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list main-nav__list--close">
+        <ul class="main-nav__list main-nav__list--closed">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html" aria-current="page">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="#" aria-current="page">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Подбор продукции</a>
+            <a class="main-nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>

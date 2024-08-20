@@ -2,6 +2,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -13,21 +14,28 @@
 }
 
 .hero__wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     padding-left: 90px;
+    padding-bottom: 526px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
+    padding-bottom: 184px;
   }
 }
 
 .hero__header {
   min-height: 302px;
-  font-family: $secondary-font-family;
+  padding-top: 27px;
 
+  font-family: $secondary-font-family;
   color: $basic-light-color;
+
   background-color: $basic-special-color;
   background-image: url("../../images/hero-bg-mobile@1x.jpg");
   background-size: cover;
@@ -35,13 +43,22 @@
   background-position: center top;
 
   @media (min-width: $tablet-width) {
+    padding-top: 65px;
     color: $basic-dark-color;
-    background: none;
     min-height: 0;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 110px;
+    padding-left: 0;
   }
 }
 
 .hero__title {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -49,10 +66,15 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+
+    margin-bottom: 40px;
   }
 }
 
 .hero__lead {
+  margin: 0;
+  margin-bottom: 29px;
+
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -60,6 +82,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
   }
 }
 
@@ -67,8 +94,33 @@
   display: block;
   margin: 0 auto;
   margin-top: -135px;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
+    position: absolute;
+    margin: 0;
+    top: 266px;
+    // left: 30px;
+    left: auto;
+    right: 30px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 29px;
+    right: 331px;
+    left: auto;
+  }
+}
+
+.hero__link {
+  margin: 0 20px;
+  padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    margin: 0;
+    padding: 14px;
+    z-index: 2;
   }
 }
