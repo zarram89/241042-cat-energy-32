@@ -1,10 +1,12 @@
 .example {
+  padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
 
   background-color: $secondary-light-color;
 
   @media (min-width: $tablet-width) {
+    padding-top: 45px;
     padding-left: 30px;
     padding-right: 30px;
     background-color: $basic-light-color;
@@ -14,6 +16,15 @@
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
+  }
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
   }
 }
 

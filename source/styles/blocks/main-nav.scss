@@ -130,8 +130,10 @@
   border-top: 1px solid $quinary-light-color;
 
   @media (min-width: $tablet-width) {
-    border-top: none;
     margin-right: 33px;
+
+    text-align: left;
+    border-top: none;
   }
 
   &--current {
@@ -178,7 +180,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 13px 0;
+    padding: 12px 0;
 
     font-size: 18px;
     line-height: 24px;
