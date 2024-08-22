@@ -1,27 +1,41 @@
 .main-footer {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
   background-color: $primary-light-color;
-  text-align: center;
-
+  padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding: 55px 30px;
+  }
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 66px;
-    padding-bottom: 66px;
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
+.main-footer__logo-link {
+  display: inline-block;
+  border-bottom: 1px solid $senary-light-color;
+  padding-bottom: 15px;
+}
+
+.main-footer__social-list {
+  border-bottom: 1px solid $senary-light-color;
+}
+
 .main-footer__academy-link {
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;

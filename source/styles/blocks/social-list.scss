@@ -1,16 +1,18 @@
 .social-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 24px;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   list-style: none;
 }
 
 .social-list__link {
   display: block;
-  width: 28px;
-  height: 22px;
+  width: 29px;
+  height: 23px;
   background-color: $quaternary-dark-color;
   mask-position: center;
   mask-repeat: no-repeat;

@@ -8,8 +8,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -108,7 +109,7 @@
 
   @media (min-width: $desktop-width) {
     top: 29px;
-    right: 331px;
+    right: 221px;
     left: auto;
   }
 }

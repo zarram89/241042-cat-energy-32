@@ -1,21 +1,32 @@
 .example {
-  padding-top: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
-
   background-color: $secondary-light-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-light-color;
+    background-image: linear-gradient($basic-light-color 55%, $secondary-light-color 55%);
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   padding-left: 110px;
+  //   padding-right: 110px;
+  // }
+}
+
+.example__wrapper {
+  position: relative;
+  padding: 24px 20px 44px;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: $basic-light-color;
-    background-image: linear-gradient($basic-light-color 55%, $secondary-light-color 55%);
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -28,11 +39,9 @@
   }
 }
 
-.example__wrapper {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
+.example__text {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__info {
@@ -44,6 +53,7 @@
 .example__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 15px 30px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, 1fr);
@@ -54,27 +64,45 @@
   }
 }
 
+.example__item {
+  position: relative;
+}
+
 .example__termin {
+  padding: 12px;
+  padding-bottom: 17px;
   font-family: $secondary-font-family;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   color: $basic-dark-color;
   text-align: center;
+  text-transform: uppercase;
+
+  border: 1px solid $quinary-dark-color;
+  border-radius: 3px;
 }
 
 .example__description {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
   margin: 0;
+  margin-left: -40px;
+  width: 80px;
 
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  text-transform: lowercase;
+
+  background-color: $secondary-light-color;
 }
 
 .example__item--price {
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 60% 40%;
 
   @media (min-width: $tablet-width) {
     grid-column: 3/-1;
@@ -89,6 +117,10 @@
 
 .example__item--price .example__termin,
 .example__item--price .example__description {
+  position: static;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
   font-family: $secondary-font-family;
   font-size: 14px;
   line-height: 20px;
@@ -97,8 +129,11 @@
   text-transform: uppercase;
 }
 
+
 .example__item--price .example__description {
+  width: auto;
   justify-self: end;
+  background: transparent;
 
   @media (min-width: $desktop-width) {
     justify-self: start;
@@ -108,6 +143,8 @@
 .example__item--price .example__termin {
   justify-self: start;
   order: 2;
+
+  border: none;
 
   @media (min-width: $tablet-width) {
     justify-self: end;

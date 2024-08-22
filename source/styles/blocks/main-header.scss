@@ -16,9 +16,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     padding-top: 55px;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 0;
+    padding-right: 0;
 
     color: $basic-light-color;
 

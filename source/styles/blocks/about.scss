@@ -40,7 +40,7 @@
   &::before {
     content: "";
     position: absolute;
-
+    top: -2px;
     width: 60px;
     height: 60px;
 
@@ -111,7 +111,7 @@
 
 .about__title {
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;

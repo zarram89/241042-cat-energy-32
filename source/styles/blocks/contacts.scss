@@ -1,20 +1,29 @@
-.contacts {
-  position: relative;
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
-.contacts__wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 26px 20px;
+.contacts__wrapper-inner {
+  // display: flex;
+  // justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 27px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 70px 60px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     top: 95px;
-    left: 110px;
+    // left: 110px;
     width: 565px;
     height: 200px;
     padding: 60px 80px;
