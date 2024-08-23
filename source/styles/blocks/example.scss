@@ -17,7 +17,8 @@
   padding: 24px 20px 44px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
+    min-height: 1036px;
+    padding-top: 47px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -42,6 +43,10 @@
 .example__text {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .example__info {
@@ -56,7 +61,8 @@
   gap: 15px 30px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 162px 162px 1fr;
+    gap: 15px 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,6 +87,14 @@
 
   border: 1px solid $quinary-dark-color;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 14px;
+    padding-bottom: 19px;
+    background-color: transparent;
+  }
 }
 
 .example__description {
@@ -97,6 +111,26 @@
   text-transform: lowercase;
 
   background-color: $secondary-light-color;
+
+  @media (min-width: $tablet-width) {
+    bottom: -5px;
+    width: 114px;
+    left: 50%;
+    margin-left: -57px;
+
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+
+    background-color: $basic-light-color;
+  }
+}
+
+.example__item:nth-child(2) .example__description {
+  @media (min-width: $tablet-width) {
+    width: 142px;
+    margin-left: -71px;
+  }
 }
 
 .example__item--price {
@@ -107,6 +141,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 3/-1;
     grid-template-columns: 1fr;
+    gap: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,12 +156,18 @@
   margin: 0;
   padding: 0;
   padding-top: 20px;
+
   font-family: $secondary-font-family;
   font-size: 14px;
   line-height: 20px;
   color: $basic-dark-color;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    font-size: 20px;
+  }
 }
 
 
@@ -134,6 +175,10 @@
   width: auto;
   justify-self: end;
   background: transparent;
+
+  @media (min-width: $tablet-width) {
+    align-self: end;
+  }
 
   @media (min-width: $desktop-width) {
     justify-self: start;

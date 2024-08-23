@@ -3,7 +3,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    top: -13px;
+    top: 230px;
     width: 100%;
     height: 462px;
     background-color: $bg-extra-dull;
@@ -12,7 +12,8 @@
       content: "";
       position: absolute;
       left: 0;
-      width: 100vw;
+      // width: 100vw; почему-то выглядывает ушко справа исправил на 100%
+      width: 100%;
       height: 100%;
       background-color: $bg-extra-dull;
       box-shadow: -200px 0 0 $bg-extra-dull;
