@@ -3,19 +3,19 @@
   padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px;
+    padding: 57px 30px 56px;
   }
 }
 
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
-
   text-align: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,10 +28,21 @@
   display: inline-block;
   border-bottom: 1px solid $senary-light-color;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-bottom: 0;
+    align-self: last baseline;
+  }
 }
 
 .main-footer__social-list {
   border-bottom: 1px solid $senary-light-color;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+  }
 }
 
 .main-footer__academy-link {
@@ -52,12 +63,17 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .main-footer__logo {
   display: block;
   width: 27px;
   height: 34px;
+
   mask-image: url("../../icons/stack.svg#icon-footer-html-academy");
   background-color: $quaternary-dark-color;
   mask-position: center;
@@ -65,5 +81,9 @@
 
   &:active {
     background-color: $basic-special-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
   }
 }

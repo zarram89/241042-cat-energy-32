@@ -6,4 +6,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }

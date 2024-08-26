@@ -30,6 +30,11 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    top: 30px;
+    left: -110px;
+  }
 }
 
 .slider__container {

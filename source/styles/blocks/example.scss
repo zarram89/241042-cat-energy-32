@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $basic-light-color;
-    background-image: linear-gradient($basic-light-color 55%, $secondary-light-color 55%);
+    background-image: linear-gradient($basic-light-color 57%, $secondary-light-color 57%);
   }
 
   // @media (min-width: $desktop-width) {
@@ -14,13 +14,11 @@
 
 .example__wrapper {
   position: relative;
-  padding: 24px 20px 44px;
+  padding: 24px 20px 39px;
 
   @media (min-width: $tablet-width) {
-    min-height: 1036px;
-    padding-top: 47px;
-    padding-left: 30px;
-    padding-right: 30px;
+    min-height: 1083px;
+    padding: 47px 30px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,10 +57,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px 30px;
+  margin: 0;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 162px 162px 1fr;
     gap: 15px 43px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
