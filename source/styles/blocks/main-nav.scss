@@ -39,12 +39,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  // mask-image: url("../../icons/stack.svg#icon-button-close");
-  // background-color: $basic-dark-color;
-  // mask-position: center center;
-  // mask-repeat: no-repeat;
-  // mask-size: 18px 18px;
-
   &::before,
   &::after {
     content: "";
@@ -118,10 +112,12 @@
 
     align-items: center;
     max-width: 500px;
+    margin-right: 6px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 700px;
+    margin-right: 0;
   }
 }
 
@@ -144,7 +140,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 4px;
+        bottom: 0;
         left: 0;
         height: 2px;
         background-color: $basic-special-color;
@@ -170,7 +166,7 @@
 
 .main-nav__link {
   display: block;
-  padding: 22px 40px 23px;
+  padding: 23px 40px;
 
   font-family: $secondary-font-family;
   font-size: 20px;
@@ -180,7 +176,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 12px 0;
+    padding: 8px 0 9px;
 
     font-size: 18px;
     line-height: 24px;
@@ -188,6 +184,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 6px 0 7px;
+
     font-size: 20px;
     line-height: 30px;
     color: $basic-light-color;

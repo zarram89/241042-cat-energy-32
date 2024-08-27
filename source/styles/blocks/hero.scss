@@ -44,14 +44,14 @@
   background-position: center top;
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
+    padding-top: 62px;
     color: $basic-dark-color;
     min-height: 0;
     background: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 110px;
+    padding-top: 107px;
     padding-left: 0;
   }
 }
@@ -100,15 +100,14 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     margin: 0;
-    top: 266px;
-    // left: 30px;
+    top: 263px;
     left: auto;
     right: 30px;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    top: 29px;
+    top: 26px;
     right: 221px;
     left: auto;
   }

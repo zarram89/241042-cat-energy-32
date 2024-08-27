@@ -1,9 +1,3 @@
-.extra-cards {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .extra-cards__item {
   display: flex;
   flex-direction: column;
@@ -23,6 +17,8 @@
 }
 
 .extra-cards__content {
+  margin-bottom: 8px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -31,7 +27,7 @@
 
 .extra-cards__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 
   font-family: $secondary-font-family;
   font-size: 16px;
@@ -43,7 +39,7 @@
 
 .extra-cards__list {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 4px;
 
   display: flex;
   justify-content: space-between;

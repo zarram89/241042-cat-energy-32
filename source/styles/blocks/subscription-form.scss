@@ -19,7 +19,7 @@
 
 .subscription-form__input {
   width: 100%;
-  padding: 13px;
+  padding: 11px;
 
   font-family: $secondary-font-family;
   font-size: 20px;
@@ -33,6 +33,10 @@
 }
 
 .subscription-form__button {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px;
+
   @media (min-width: $tablet-width) {
     width: 33%;
   }

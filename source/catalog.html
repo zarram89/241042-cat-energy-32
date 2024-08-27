@@ -13,31 +13,31 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
-  <header class="main-header wrapper">
+<body class="page__body page__body--catalog">
+  <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59" type="image/svg+xml">
         <source media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        <img class="main-header__logo-image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
       </picture>
       <picture>
         <source media="(min-width: 1440px)" srcset="images/logo-text-light.svg" width="118" height="21" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo-text-light.svg" width="101" height="18" type="image/svg+xml">
-        <img class="logo__text" src="images/logo-text-light.svg" width="101" height="18" alt="Cat Energy">
+        <!-- <source media="(min-width: 768px)" srcset="images/logo-text-light.svg" width="101" height="18" type="image/svg+xml"> -->
+        <img class="main-header__logo-text" src="images/logo-text-light.svg" width="101" height="18" alt="Cat Energy">
       </picture>
     </a>
-    <nav class="main-header__main-nav main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list main-nav__list--closed">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html" aria-current="page">Главная</a>
-          </li>
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link">Каталог продукции</a>
+            <a class="main-nav__link" aria-current="page">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Подбор программы</a>
@@ -48,7 +48,7 @@
   </header>
 
   <main class="main-container catalog">
-    <div class="catalog__wrapper wrapper">
+    <div class="catalog__wrapper">
       <h1 class="catalog__title">Каталог продукции</h1>
       <!-- Basic-products -->
       <section class="products">
@@ -200,7 +200,7 @@
                     </picture>
                   </a>
                   <div class="cards__info">
-                    <h3 class="cards__title">Cat Energy PRO 500 г</h3>
+                    <h3 class="cards__title">Cat Energy SLIM 500 г</h3>
                     <dl class="cards__list">
                       <div class="cards__list-item">
                         <dt class="cards__termin">Масса</dt>
@@ -233,7 +233,7 @@
                     </picture>
                   </a>
                   <div class="cards__info">
-                    <h3 class="cards__title">Cat Energy PRO 1000 г</h3>
+                    <h3 class="cards__title">Cat Energy SLIM 1000 г</h3>
                     <dl class="cards__list">
                       <div class="cards__list-item">
                         <dt class="cards__termin">Масса</dt>
@@ -266,7 +266,7 @@
                     </picture>
                   </a>
                   <div class="cards__info">
-                    <h3 class="cards__title">Cat Energy PRO 500 г</h3>
+                    <h3 class="cards__title">Cat Energy SLIM 500 г</h3>
                     <dl class="cards__list">
                       <div class="cards__list-item">
                         <dt class="cards__termin">Масса</dt>
@@ -301,7 +301,7 @@
       </section>
 
       <!-- Extra-products -->
-      <section class="extra-products">
+      <section class="extra-products wrapper">
         <h2 class="extra-products__title title">Дополнительные товары</h2>
         <div class="extra-products__wrapper">
           <ul class="extra-products__list extra-cards">
@@ -353,7 +353,6 @@
               </div>
               <a class="extra-cards__link button button--primary" href="#">Заказать</a>
             </li>
-
           </ul>
 
           <div class="extra-products__promo">
@@ -363,7 +362,7 @@
         </div>
       </section>
 
-      <section class="subscription">
+      <section class="subscription wrapper">
         <h2 class="subscription__title title">Акции и новинки</h2>
         <div class="subscription__wrapper">
           <p class="subscription__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
@@ -382,41 +381,44 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
-        <p class="contacts__lead">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address"><span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span> <span class="contacts__city">Санкт-Петербург</span></address>
+        <div class="contacts__wrapper-inner">
+          <p class="contacts__lead">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="contacts__address"><span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span> <span class="contacts__city">Санкт-Петербург</span></address>
+        </div>
       </div>
       <div class="contacts__map-container map">
       </div>
     </section>
 
   </main>
-
-  <footer class="main-footer wrapper">
-    <a class="main-footer__logo-link logo" href="index.html">
-      <picture>
-        <img src="images/logo-text-dark.svg" width="128" height="24" alt="Cat Energy">
-      </picture>
-    </a>
-    <ul class="main-footer__social-list social-list">
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--vk" href="#">
-          <span class="visually-hidden">Cat Energy в VK</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--youtube" href="#">
-          <span class="visually-hidden">Cat Energy в YouTube</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--telegram" href="#">
-          <span class="visually-hidden">Cat Energy в Телеграм</span>
-        </a>
-      </li>
-    </ul>
-    <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-      <span class="main-footer__logo"></span>
-    </a>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo-link logo" href="index.html">
+        <picture>
+          <img src="images/logo-text-dark.svg" width="128" height="24" alt="Cat Energy">
+        </picture>
+      </a>
+      <ul class="main-footer__social-list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="#">
+            <span class="visually-hidden">Cat Energy в VK</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="#">
+            <span class="visually-hidden">Cat Energy в YouTube</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--telegram" href="#">
+            <span class="visually-hidden">Cat Energy в Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+        <span class="main-footer__logo"></span>
+      </a>
+    </div>
   </footer>
 </body>
 

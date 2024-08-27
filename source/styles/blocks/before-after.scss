@@ -22,18 +22,14 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 500px;
+    top: 30px;
+    left: -110px;
     padding: 0;
     background-color: transparent;
 
     &::before {
       display: none;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 30px;
-    left: -110px;
   }
 }
 
@@ -51,7 +47,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 770px;
     margin: 0;
   }

@@ -1,9 +1,38 @@
+.extra-products {
+  padding-top: 24px;
+}
+
+.extra-products__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 35px;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   height: 2px;
+  //   width: 100%;
+  //   top: 10px;
+  //   margin-left: 40px;
+
+  //   background-color: $basic-special-color;
+  //   overflow: shiden;
+  // }
+}
+
 .extra-products__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 245px;
     gap: 80px;
   }
+}
+
+.extra-products__list {
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  list-style: none;
 }
 
 .extra-products__promo {
@@ -32,7 +61,6 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-
 
   font-size: 16px;
   line-height: 20px;
