@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     background-color: $basic-light-color;
     background-image: linear-gradient($basic-light-color 57%, $secondary-light-color 57%);
+    // background-image: linear-gradient($basic-light-color 50%, $secondary-light-color 50%);
   }
 
   @media (min-width: $desktop-width) {
@@ -51,9 +52,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 436px;
     margin-bottom: 69px;
   }
 }

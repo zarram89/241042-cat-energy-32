@@ -4,12 +4,22 @@
   @media (min-width: $tablet-width) {
     padding-top: 62px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
 }
 
 .catalog__wrapper {
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+
+    @media (min-width: $desktop-width) {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0;
+    }
   }
 }
 
