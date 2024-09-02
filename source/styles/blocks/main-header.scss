@@ -3,17 +3,19 @@
   flex-direction: column;
 
   color: $basic-dark-color;
+
   background-color: $basic-light-color;
   border-bottom: 1px solid $senary-light-color;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     padding-top: 28px;
     padding-left: 30px;
     padding-right: 30px;
 
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     border: none;
   }
 

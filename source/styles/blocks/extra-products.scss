@@ -15,22 +15,26 @@
 
 .extra-products__title {
   position: relative;
+
   max-width: fit-content;
   margin: 0;
   margin-bottom: 35px;
-  box-shadow: -40px 0 0 0  $basic-light-color;
+
   background-color: $basic-light-color;
+  box-shadow: -40px 0 0 0  $basic-light-color;
 
   &::before {
     content: "";
     position: absolute;
     top: 0.45em;
     right: 0;
+    z-index: -1;
+
     width: 100vw;
     height: 2px;
+
     background: $basic-special-color;
     box-shadow: calc(100vw + 40px) 0 0 0 $basic-special-color;
-    z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
@@ -41,9 +45,10 @@
 
 .extra-products__title.title {
   @media (min-width: $desktop-width) {
+    margin-left: 0;
+
     font-size: 40px;
     line-height: 40px;
-    margin-left: 0;
   }
 }
 
@@ -91,7 +96,6 @@
 }
 
 .extra-products__promo-slogan {
-  // position: relative;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -105,21 +109,24 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+
     text-align: center;
   }
 }
 
 .extra-products__promo-slogan::before {
-  display: block;
   content: "";
-  margin: 0 auto 48px;
+  display: block;
+
   width: 78px;
   height: 80px;
+  margin: 0 auto 48px;
 
   background-image: url("../../icons/icon-subscription-gift.svg");
 

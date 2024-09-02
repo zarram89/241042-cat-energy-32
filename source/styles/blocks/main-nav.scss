@@ -8,12 +8,14 @@
   top: -53px;
   right: 13px;
   z-index: 2;
+
   display: block;
   width: 40px;
   height: 40px;
+
   background-color: transparent;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -27,6 +29,7 @@
   right: 8px;
   width: 24px;
   height: 2px;
+
   background-color: $basic-dark-color;
   box-shadow: 0 8px 0 0 $basic-dark-color, 0 16px 0 0 $basic-dark-color;
 }
@@ -45,14 +48,17 @@
     position: absolute;
     top: 18px;
     left: 12px;
+
     width: 25px;
     height: 2px;
+
     background-color: $basic-dark-color;
   }
 
   &::before {
-    transform: rotate(45deg);
     box-shadow: none;
+
+    transform: rotate(45deg);
   }
 
   &::after {
@@ -78,7 +84,9 @@
     right: 0;
     left: 0;
     z-index: 10;
+
     min-height: 66px;
+
     background-color: $basic-light-color;
   }
 
@@ -94,10 +102,6 @@
   .main-nav--nojs .main-nav__item {
     display: block;
   }
-
-  // .main-nav--nojs .main-nav__item--current {
-  //   //СТИЛЬ ДЛЯ АКТИВНОЙ ССЫЛКИ
-  // }
 }
 
 .main-nav__list {
@@ -108,21 +112,22 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     flex-wrap: wrap;
 
-    align-items: center;
     max-width: 500px;
-    margin-right: 6px;
+    margin-right: 5px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 700px;
-    margin-right: 0;
+    margin-right: 3px;
   }
 }
 
 .main-nav__item {
   text-align: center;
+
   border-top: 1px solid $quinary-light-color;
 
   @media (min-width: $tablet-width) {
@@ -140,15 +145,19 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 3px;
         left: 0;
+
         height: 2px;
+
         background-color: $basic-special-color;
       }
     }
 
     @media (min-width: $desktop-width) {
       &::after {
+        bottom: 0;
+
         background-color: $basic-light-color;
       }
     }
@@ -159,8 +168,9 @@
   border-bottom: 1px solid $quinary-light-color;
 
   @media (min-width: $tablet-width) {
-    border-bottom: none;
     margin-right: 0;
+
+    border-bottom: none;
   }
 }
 

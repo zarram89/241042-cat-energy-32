@@ -1,6 +1,7 @@
 .main-footer {
-  background-color: $primary-light-color;
   padding: 40px 20px;
+
+  background-color: $primary-light-color;
 
   @media (min-width: $tablet-width) {
     padding: 57px 30px 56px;
@@ -30,19 +31,22 @@
 
 .main-footer__logo-link {
   display: inline-block;
+
   border-bottom: 1px solid $senary-light-color;
   padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    border: none;
-    padding-bottom: 0;
     align-self: last baseline;
+    padding-bottom: 0;
+
+    border: none;
   }
 }
 
 .main-footer__social-list {
-  border-bottom: 1px solid $senary-light-color;
   margin: 0;
+
+  border-bottom: 1px solid $senary-light-color;
 
   @media (min-width: $tablet-width) {
     margin-left: 35px;
@@ -50,10 +54,12 @@
 }
 
 .main-footer__academy-link {
-  padding-top: 19px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding-top: 19px;
+
   font-size: 16px;
   line-height: 20px;
   color: $primary-dark-color;

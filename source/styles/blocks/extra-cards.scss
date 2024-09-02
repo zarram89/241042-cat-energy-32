@@ -7,19 +7,21 @@
   border-top: 1px solid $quinary-dark-color;
 
   @media (min-width: $tablet-width) {
+    padding: 24px 38px 28px;
+
     border-top: 1px solid $quinary-dark-color;
     border-left: 1px solid $quinary-dark-color;
     border-right: 1px solid $quinary-dark-color;
-    padding: 23px 38px 29px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding: 15px 0 16px;
+
     border-left: none;
     border-right: none;
-    padding: 14px 0 17px;
   }
 }
 
@@ -37,7 +39,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 68%;
     margin: 0;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -63,17 +68,19 @@
 }
 
 .extra-cards__list {
-  margin: 0;
-  margin-bottom: 4px;
-
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
     margin-bottom: 0;
   }
 }
@@ -84,7 +91,13 @@
   text-align: right;
 
   @media (min-width: $tablet-width) {
-    margin-left: 49px;
+    width: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 42px;
+
+    text-align: left;
   }
 }
 
@@ -92,5 +105,9 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 27%;
   }
 }

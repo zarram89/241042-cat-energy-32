@@ -6,6 +6,12 @@
     flex-direction: row;
     margin-left: 8px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    padding-left: 234px;
+    padding-right: 234px;
+  }
 }
 
 .subscription-form__email {
@@ -13,20 +19,27 @@
   margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     width: 59%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 66%;
   }
 }
 
 .subscription-form__input {
   width: 100%;
-  padding: 11px;
+  padding: 12px;
 
   font-family: $secondary-font-family;
   font-size: 20px;
   line-height: 30px;
   color: $primary-dark-color;
   text-transform: uppercase;
+
+  border: 1px solid $quinary-dark-color;
+  border-radius: 0;
 }
 
 .subscription-form__input::placeholder {
@@ -34,11 +47,16 @@
 }
 
 .subscription-form__button {
+  padding: 15px;
+
   font-size: 20px;
   line-height: 26px;
-  padding: 15px;
 
   @media (min-width: $tablet-width) {
     width: 40%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 34%;
   }
 }
