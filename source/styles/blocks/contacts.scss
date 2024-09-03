@@ -9,6 +9,7 @@
 .contacts__wrapper {
   @media (min-width: $desktop-width) {
     position: relative;
+    z-index: 1;
 
     width: 1220px;
     margin: 0 auto;

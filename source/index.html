@@ -12,42 +12,43 @@
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
   <script src="scripts/slider.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш&API-ключ>" defer></script>
+  <script src="scripts/map.js" defer></script>
 </head>
 
 <body class="page__body page__body--index">
   <header class="main-header">
-    <a class="main-header__logo logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img class="main-header__logo-image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-      </picture>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo-text-light.svg" width="118" height="21" type="image/svg+xml">
-        <img class="main-header__logo-text" src="images/logo-text-light.svg" width="101" height="18" alt="Cat Energy">
-      </picture>
-    </a>
-    <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть/закрыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list main-nav__list--closed">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" aria-current="page">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main class="main-container">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="main-header__logo-image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-text-light.svg" width="118" height="21" type="image/svg+xml">
+          <img class="main-header__logo-text" src="images/logo-text-light.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
+      </a>
+      <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list main-nav__list--closed">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" aria-current="page">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <!-- Hero section -->
     <section class="hero">
       <div class="hero__wrapper">
@@ -64,6 +65,9 @@
       </div>
     </section>
 
+  </header>
+
+  <main class="main-container">
     <!-- Price section -->
     <section class="diet wrapper">
       <h2 class="visually-hidden">Диеты для котов</h2>
@@ -160,8 +164,7 @@
           <address class="contacts__address"><span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span> <span class="contacts__city">Санкт-Петербург</span></address>
         </div>
       </div>
-      <div class="contacts__map-container map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+      <div class="contacts__map-container map" id="ymap">
       </div>
     </section>
   </main>

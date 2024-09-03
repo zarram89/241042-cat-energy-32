@@ -40,10 +40,10 @@
   color: $basic-light-color;
 
   background-color: $basic-special-color;
-  background-image: url("../../images/hero-bg-mobile@1x.jpg");
-  background-size: cover;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/hero-bg-mobile@1x.jpg"), linear-gradient(#64a83b, #63a63c);
+  background-size: 320px 302px, 320px 302px, 100vw 302px;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: top;
 
   @media (min-width: $tablet-width) {
     min-height: 0;
