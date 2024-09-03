@@ -8,6 +8,7 @@ $tertiary-dark-color: #222222;
 $quaternary-dark-color: #666666;
 $quinary-dark-color: #cdcdcd;
 $senary-dark-color: #d3d3d3;
+$senary-dark-color: #666666;
 
 $basic-light-color: #ffffff;
 $basic-light-color-opacity: rgba(255, 255, 255, 0.3);
@@ -17,10 +18,15 @@ $tertiary-light-color: #c4c4c4;
 $quaternary-light-color: #ebebeb;
 $quinary-light-color: #e6e6e6;
 $senary-light-color: #d9d9d9;
+$senary-light-color: #eaeaea;
 
 $basic-special-color: #68b738;
 $primary-special-color: rgba(104, 183, 56, 0.85);
 $secondary-special-color: #5eaa2f;
+$tertiary-special-color: #64a83b;
+$quaternary-special-color:#63a63c;
+$quinary-special-color: #62a53b;
+
 
 // Fonts
 $primary-font-family: "Lato", sans-serif;
@@ -31,5 +37,5 @@ $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
 
-$f-average: #666666;
-$bg-extra-dull: #eaeaea;
+// $f-average: #666666;
+// $bg-extra-dull: #eaeaea;
