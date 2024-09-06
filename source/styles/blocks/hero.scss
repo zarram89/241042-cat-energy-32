@@ -40,7 +40,15 @@
   color: $basic-light-color;
 
   background-color: $basic-special-color;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/hero-bg-mobile@1x.jpg"), linear-gradient($tertiary-special-color, $quaternary-special-color);
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../images/hero-bg-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/hero-bg-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/hero-bg-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/hero-bg-mobile@2x.jpg") type("image/jpeg") 2x
+    ),
+    linear-gradient($tertiary-special-color, $quaternary-special-color);
   background-size: 320px 302px, 320px 302px, 100vw 302px;
   background-repeat: no-repeat;
   background-position: top;
@@ -57,6 +65,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 107px;
     padding-left: 0;
+    z-index: 2;
   }
 }
 
@@ -116,6 +125,7 @@
     top: 26px;
     right: 221px;
     left: auto;
+    z-index: 1;
   }
 }
 
