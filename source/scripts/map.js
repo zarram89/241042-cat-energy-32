@@ -1,11 +1,14 @@
+
+// eslint-disable-next-line no-undef
 ymaps.ready(() => {
+  // eslint-disable-next-line no-undef
   const myMap = new ymaps.Map('ymap', {
       center: [59.938631, 30.323037],
       zoom: 16
     }, {
       searchControlProvider: 'yandex#search'
     }),
-
+    // eslint-disable-next-line no-undef
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
       hintContent: 'Cat Energy'
     }, {
