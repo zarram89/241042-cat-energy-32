@@ -1,3 +1,15 @@
+.diet {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+  }
+}
+
 .diet__list {
   display: flex;
   flex-flow: column wrap;
@@ -12,8 +24,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // flex-direction: row;
-    // gap: 80px 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -21,9 +31,11 @@
 }
 
 .diet__item {
-  background-color: $primary-light-color;
   position: relative;
-  padding: 20px;
+
+  padding: 30px 20px 0;
+
+  background-color: $primary-light-color;
 
   &:last-child {
     margin-bottom: 0;
@@ -34,15 +46,36 @@
     position: absolute;
     top: 24px;
     left: 20px;
+
+    width: 50px;
+    height: 50px;
+
+
     background-color: $basic-special-color;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+
+    @media (min-width: $tablet-width) {
+      top: 92px;
+      right: 63px;
+      left: auto;
+      height: 200px;
+
+      width: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      left: 52px;
+
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &::after {
     content: "";
     position: absolute;
+
     background-color: transparent;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -52,10 +85,33 @@
     &::after {
       top: 21px;
       left: 27px;
-      height: 50px;
       width: 36px;
+      height: 50px;
+
       background-image: url("../../icons/stack.svg#icon-diet-cat-slim");
       background-size: 36px 50px;
+
+      @media (min-width: $tablet-width) {
+        top: 81px;
+        right: 93px;
+        left: auto;
+
+        width: 140px;
+        height: 194px;
+
+        background-size: 140px 194px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 41px;
+        left: 67px;
+        right: auto;
+
+        width: 70px;
+        height: 97px;
+
+        background-size: 70px 97px;
+      }
     }
   }
 
@@ -63,61 +119,133 @@
     &::after {
       top: 35px;
       left: 12px;
-      height: 50px;
+
       width: 67px;
+      height: 50px;
+
       background-image: url("../../icons/stack.svg#icon-diet-cat-muscle");
       background-size: 67px 28px;
+
+      @media (min-width: $tablet-width) {
+        top: 135px;
+        right: 29px;
+        left: auto;
+
+        width: 269px;
+        height: 113px;
+        background-size: 269px 113px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 67px;
+        left: 33px;
+        right: auto;
+
+        width: 134px;
+        height: 56px;
+
+        background-size: 134px 56px;
+      }
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 52px 57px;
+    padding: 77px 52px 35px;
   }
 
   @media (min-width: $desktop-width) {
-    // min-width: 570px;
     flex: 1 1 auto;
-    padding: 77px 52px 59px;
+    padding: 77px 52px 55px;
   }
 }
 
 .diet__title {
+  margin: 0;
+  margin-bottom: 29px;
   padding-left: 70px;
+
   font-family: $secondary-font-family;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   color: $basic-dark-color;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    padding-left: 0;
+
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
+}
+
+.diet__description {
+  margin: 0;
+  padding-bottom: 23px;
+
+  border-bottom: 1px solid $senary-light-color;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    margin-bottom: 10px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 0;
   }
 }
 
 .diet__link {
   position: relative;
+
+  display: inline-block;
+  padding-top: 18px;
+  padding-bottom: 22px;
+
   font-family: $secondary-font-family;
   font-size: 16px;
   line-height: 16px;
   color: $basic-dark-color;
   text-transform: uppercase;
   text-decoration: none;
-  transition: background-image 1s ease;
 
   &::after {
     content: "";
     position: absolute;
     top: 50%;
-    right: -35px;
-    margin-top: -4.5px;
+    right: -46px;
+
     width: 32px;
     height: 10px;
+    margin-top: -7px;
+
     background-image: url("../../icons/stack.svg#icon-arrow-short");
     background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      right: -56px;
+    }
   }
 
   &:hover::after {
     background-image: url("../../icons/stack.svg#icon-arrow-long");
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }

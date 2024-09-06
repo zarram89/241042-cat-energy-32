@@ -19,6 +19,7 @@
 
   &:active {
     color: $basic-light-color-opacity;
+
     background-color: $secondary-special-color;
   }
 
@@ -34,20 +35,24 @@
 
   &--primary {
     color: $basic-light-color;
+
     background-color: $basic-special-color;
   }
 
   &--secondary {
     color: $primary-dark-color;
+
     background-color: $primary-light-color;
 
     &:hover {
       color: $primary-dark-color;
+
       background-color: $quaternary-light-color;
     }
 
     &:focus {
       color: $primary-dark-color;
+
       background-color: $quaternary-light-color;
     }
 

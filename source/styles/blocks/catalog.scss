@@ -1,6 +1,33 @@
+.catalog {
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media (min-width: $desktop-width) {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+}
+
 .catalog__title {
   margin: 0;
   margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   font-family: $secondary-font-family;
   font-size: 36px;
@@ -9,7 +36,9 @@
   color: $basic-dark-color;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 84px;
+    margin-bottom: 85px;
+    padding-left: 0;
+    padding-right: 0;
 
     font-size: 60px;
     line-height: 60px;

@@ -1,3 +1,18 @@
+.about {
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+    padding-bottom: 45px;
+  }
+}
+
 .about__list {
   display: flex;
   flex-direction: column;
@@ -7,28 +22,26 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    // flex-flow: row wrap;
-    // justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 153px;
+    gap: 37px 59px;
   }
 
   @media (min-width: $desktop-width) {
-    // flex-flow: row wrap;
-    // justify-content: space-between;
     grid-template-columns: repeat(4, 1fr);
-    gap: 94px;
+    gap: 80px;
   }
 }
 
 .about__item {
   position: relative;
+
   min-height: 60px;
 
   &::before {
     content: "";
     position: absolute;
+    top: -2px;
 
     width: 60px;
     height: 60px;
@@ -38,6 +51,8 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
+      top: 40px;
+
       width: 80px;
       height: 80px;
     }
@@ -65,46 +80,71 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
-    width: 230px;
     min-height: 280px;
 
     &::after {
       position: absolute;
       top: 0;
       right: 0;
+      z-index: -1;
 
       font-family: $secondary-font-family;
       font-size: 280px;
       line-height: 280px;
       color: $primary-light-color;
-      z-index: -1;
     }
 
     &:nth-child(1)::after {
       content: "1";
+
+      @media (min-width: $tablet-width) {
+        left: 118px;
+      }
     }
 
     &:nth-child(2)::after {
       content: "2";
+
+      @media (min-width: $tablet-width) {
+        left: 110px;
+      }
     }
 
     &:nth-child(3)::after {
       content: "3";
+
+      @media (min-width: $tablet-width) {
+        left: 110px;
+      }
     }
 
     &:nth-child(4)::after {
       content: "4";
+
+      @media (min-width: $tablet-width) {
+        left: 112px;
+      }
     }
   }
 }
 
+.about__title {
+  margin: 0;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
 
 .about__description {
   margin: 0;
-  padding-left: 90px;
+  padding-left: 80px;
 
   @media (min-width: $tablet-width) {
     row-gap: 37px;
+
+    width: 245px;
     padding-top: 110px;
     padding-left: 0;
   }
