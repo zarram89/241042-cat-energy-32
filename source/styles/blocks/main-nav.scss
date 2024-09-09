@@ -214,17 +214,3 @@
     }
   }
 }
-
-.page__body.page__body--catalog .main-nav__link {
-  @media (min-width: $desktop-width) {
-    color: $basic-dark-color;
-  }
-}
-
-.page__body--catalog .main-nav__item--current {
-  &::after {
-    @media (min-width: $desktop-width) {
-      background-color: $basic-special-color;
-    }
-  }
-}

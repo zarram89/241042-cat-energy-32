@@ -8,7 +8,7 @@
     width: 100%;
     height: 462px;
 
-    background-color: $senary-light-color;
+    background-color: transparent;
 
     &::before {
       content: "";
@@ -18,8 +18,8 @@
       width: 100%;
       height: 100%;
 
-      background-color: $senary-light-color;
-      box-shadow: -200px 0 0 $senary-light-color;
+      background-color: transparent;
+      box-shadow: -200px 0 0 transparent;
     }
   }
 
