@@ -66,6 +66,9 @@
 }
 
 .example__info {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $desktop-width) {
     width: 436px;
   }
@@ -233,4 +236,8 @@
     justify-self: center;
     margin-left: 12px;
   }
+}
+
+.example__slider {
+  display: flex;
 }
