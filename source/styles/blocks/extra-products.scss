@@ -80,7 +80,14 @@
   padding: 58px 58px 43px;
 
   background-color: $primary-special-color;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/extra-products-bg-mobile@1x.jpg");
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../images/extra-products-bg-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/extra-products-bg-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/extra-products-bg-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/extra-products-bg-mobile@2x.jpg") type("image/jpeg") 2x
+    );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -89,13 +96,27 @@
     min-height: 200px;
     padding: 60px 125px 60px 77px;
 
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/extra-products-bg-tablet@1x.jpg");
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/extra-products-bg-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/extra-products-bg-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/extra-products-bg-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/extra-products-bg-tablet@2x.jpg") type("image/jpeg") 2x
+      );
   }
 
   @media (min-width: $desktop-width) {
     padding: 58px 42px  43px;
 
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/extra-products-bg-desktop@1x.jpg");
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/extra-products-bg-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/extra-products-bg-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/extra-products-bg-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/extra-products-bg-desktop@2x.jpg") type("image/jpeg") 2x
+      );
   }
 }
 

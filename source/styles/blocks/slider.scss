@@ -1,40 +1,14 @@
-//before-after style
 .slider {
-  position: relative;
-
   @media (min-width: $tablet-width) {
-    top: 230px;
+    padding-bottom: 57px;
 
-    width: 100%;
-    height: 462px;
-
-    background-color: $senary-light-color;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-
-      width: 100%;
-      height: 100%;
-
-      background-color: $senary-light-color;
-      box-shadow: -200px 0 0 $senary-light-color;
-    }
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 30px;
-    left: -110px;
-
-    padding: 0;
+    padding-bottom: 0;
 
     background-color: transparent;
-
-    &::before {
-      display: none;
-    }
   }
 }
 
@@ -46,17 +20,11 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    top: -151px;
-
     width: 560px;
     height: 512px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: -5px;
-    left: 770px;
-
     margin: 0;
   }
 }

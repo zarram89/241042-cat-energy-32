@@ -192,13 +192,14 @@
   border-bottom: 1px solid $senary-light-color;
 
   @media (min-width: $tablet-width) {
-    width: 340px;
+    padding-right: 265px;
     margin-bottom: 10px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+    padding-right: 0;
     margin-bottom: 0;
   }
 }

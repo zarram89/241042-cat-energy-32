@@ -46,6 +46,11 @@
   color: $primary-dark-color;
 }
 
+.subscription-form__input:disabled {
+  background-color: #f2f2f2;
+  opacity: 0.3;
+}
+
 .subscription-form__button {
   padding: 15px;
 
