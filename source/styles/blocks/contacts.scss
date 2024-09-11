@@ -87,3 +87,11 @@
 .contacts__map-container {
   min-width: 100%;
 }
+
+.page__body--catalog .contacts__wrapper-inner {
+  background-color: $primary-light-color;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-light-color;
+  }
+}

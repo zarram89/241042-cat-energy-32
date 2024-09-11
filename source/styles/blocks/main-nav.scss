@@ -114,13 +114,14 @@
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
+    column-gap: 33px;
 
     max-width: 500px;
     margin-right: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 700px;
+    max-width: 600px;
     margin-right: 3px;
   }
 }
@@ -131,8 +132,6 @@
   border-top: 1px solid $quinary-light-color;
 
   @media (min-width: $tablet-width) {
-    margin-right: 33px;
-
     text-align: left;
     border-top: none;
   }
@@ -168,8 +167,6 @@
   border-bottom: 1px solid $quinary-light-color;
 
   @media (min-width: $tablet-width) {
-    margin-right: 0;
-
     border-bottom: none;
   }
 }
@@ -211,6 +208,20 @@
 
     &:active {
       opacity: 0.3;
+    }
+  }
+}
+
+.page__body--catalog .main-nav__link {
+  @media (min-width: $desktop-width) {
+    color: $basic-dark-color;
+  }
+}
+
+.page__body--catalog .main-nav__item--current {
+  &::after {
+    @media (min-width: $desktop-width) {
+      background-color: $basic-special-color;
     }
   }
 }

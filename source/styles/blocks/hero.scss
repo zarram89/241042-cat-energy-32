@@ -54,6 +54,7 @@
   background-position: top;
 
   @media (min-width: $tablet-width) {
+    max-width: 450px;
     min-height: 0;
     padding-top: 62px;
 
@@ -63,6 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    // max-width: 450px;
     padding-top: 107px;
     padding-left: 0;
     z-index: 2;

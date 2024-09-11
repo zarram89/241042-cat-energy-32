@@ -10,3 +10,13 @@
     line-height: 60px;
   }
 }
+
+.catalog .title {
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
